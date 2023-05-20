@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "8728d83e-2993-4b0e-98ec-20251c1eddf9",
+		"name": "mani_test",
+		"description": "CRUD Operations",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12538684",
+		"_collection_link": "https://lunar-water-256565.postman.co/workspace/test~f8e38fec-e07e-4410-9d20-c22f5bf3797a/collection/12538684-8728d83e-2993-4b0e-98ec-20251c1eddf9?action=share&creator=12538684&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "https://api.openbrewerydb.org/v1/breweries?by_state=Arizona",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openbrewerydb.org/v1/breweries?by_state=Arizona",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openbrewerydb",
+						"org"
+					],
+					"path": [
+						"v1",
+						"breweries"
+					],
+					"query": [
+						{
+							"key": "by_state",
+							"value": "Arizona"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://jsonplaceholder.typicode.com/posts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://jsonplaceholder.typicode.com/posts/101",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 11,\r\n    \"id\": 101,\r\n    \"title\": \"test mani\",\r\n    \"body\": \"cupiditate quo est a modi nesciunt soluta\\nipsa voluptas error itaque dicta in\\nautem qui minus magnam et distinctio eum\\naccusamus ratione error aut\"\r\n}"
+				},
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts/101\n",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts",
+						"101\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://jsonplaceholder.typicode.com/posts/101",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 11,\r\n    \"id\": 101,\r\n    \"title\": \"test mani\",\r\n    \"body\": \"cupiditate quo est a modi nesciunt soluta\\nipsa voluptas error itaque dicta in\\nautem qui minus magnam et distinctio eum\\naccusamus ratione error aut\"\r\n}"
+				},
+				"url": {
+					"raw": "Update",
+					"host": [
+						"Update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
